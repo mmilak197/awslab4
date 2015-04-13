@@ -5,6 +5,7 @@ var S3Form = require("../s3post").S3Form;
 var AWS_CONFIG_FILE = "config.json";
 var POLICY_FILE = "policy.json";
 var INDEX_TEMPLATE = "index.ejs";
+var DIGEST_TEMPLATE = "digets.ejs";
 
 
 var task = function(request, callback){
@@ -23,6 +24,7 @@ var task = function(request, callback){
 	fields = s3Form.addS3CredientalsFields(fields, awsConfig);
 	
 	callback(null, {template: INDEX_TEMPLATE, params:{fields:fields, bucket:"lab4-weeia"}});
+
 }
 
 exports.action = task;
