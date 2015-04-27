@@ -2,5 +2,6 @@
 	{"path": "/digestForm", "action":{"template":"digestForm.ejs", "params":[]} },
 	{"path":"/","action":"createform"},	
 	{"path":"/digest","action":"digest"},
-	{"path":"/successPage","action":"successPage"}
+	{"path":"/successPage2","action":"successPage2"}
+	
 ]
