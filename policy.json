@@ -1,10 +1,10 @@
 {	"expiration" : {"day":1},
-	"conditions": [ ["starts-with", "$key", "mateusz.milak/mateusz.milak"],
+	"conditions": [ ["starts-with", "$key", "mateusz.milak/"],
     				 {"bucket": "lab4-weeia"}, 
 					 {"x-amz-meta-name": "Mateusz Milak"},
 					 {"x-amz-meta-computer": "localhost"},
     				 {"acl": "private"},
-    				 {"success_action_redirect": "http://localhost:8080/successPage2"},   
+    				 {"success_action_redirect": "http://localhost:8080/success"},   
     				 ["content-length-range", 0, 1048576]
     				]   
 }
